@@ -1,30 +1,30 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
+import "../css/Navbar.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   return (
-    <header className="nav">
-      <div className="nav__inner">
-        <NavLink to="/" className="brand">NextStep</NavLink>
-
+    <>
+      {/* SMALL FLOATING HAMBURGER */}
         <button
-          aria-label="Toggle navigation"
-          className="nav__toggle"
+          className="home-hamburger"
           onClick={() => setOpen(!open)}
         >
-          ☰
+          {open ? "✕" : "☰"}
         </button>
 
-        <nav className={`nav__links ${open ? "is-open" : ""}`}>
+      {/* SMALL RIGHT-SIDE MENU */}
+        <div className={`side-menu ${open ? "show" : ""}`}>
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
-          <NavLink to="/about" onClick={() => setOpen(false)}>About</NavLink>
-          <NavLink to="/product" onClick={() => setOpen(false)}>Solutions</NavLink>
+          <NavLink to="/about" onClick={() => setOpen(false)}>iGEM</NavLink>
+          <NavLink to="/rice" onClick={() => setOpen(false)}>Rice</NavLink>
+          <NavLink to="/project" onClick={() => setOpen(false)}>Project</NavLink>
+          <NavLink to="/fundraise" onClick={() => setOpen(false)}>Fundraise</NavLink>
           <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
-        </nav>
-      </div>
-    </header>
+        </div>
+    </>
   );
 }
-

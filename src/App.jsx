@@ -4,7 +4,9 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
-import Product from "./pages/Product.jsx";
+import Project from "./pages/Project.jsx";
+import Fundraise from "./pages/Fundraise.jsx";
+import Rice from "./pages/Rice.jsx";
 
 export default function App() {
   return (
@@ -15,7 +17,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Product" element={<Product />} />
+          <Route path="/Project" element={<Project />} />
+          <Route path="/Rice" element={<Rice />} />
+          <Route path="/Fundraise" element={<Fundraise />} />
           <Route path="*" element={<h2>404 — Page not found</h2>} />
         </Routes>
       </main>
@@ -23,4 +27,3 @@ export default function App() {
     </div>
   );
 }
-

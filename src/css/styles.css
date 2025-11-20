@@ -1,7 +1,7 @@
 :root {
   --bg: #6484ee;
   --card: #dde5ff;
-  --text: #ffffff;
+  --text: #080707;
   --muted: #a9b3c7;
   --accent: #62a0ff;
   --accent-2: #7ce2c3;
@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
-  background: rgba(10, 15, 31, 0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 a { color: inherit; text-decoration: none; }
@@ -32,37 +32,6 @@ a { color: inherit; text-decoration: none; }
   padding: 2rem 1rem;
 }
 
-/* Navbar */
-.nav {
-  position: sticky; top: 0; z-index: 50;
-  background: rgba(10, 15, 31, 0.8);
-  backdrop-filter: blur(8px);
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
-.nav__inner {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0.75rem 1rem;
-  display: flex; align-items: center; justify-content: space-between;
-}
-.brand { font-weight: 700; letter-spacing: 0.4px; }
-.nav__toggle { display: none; font-size: 1.25rem; background: none; color: var(--text); border: none; cursor: pointer; }
-.nav__links { display: flex; gap: 1rem; justify-content: center; flex: 1; }
-.nav__links a { padding: 0.5rem 0.75rem; border-radius: 10px; color: var(--muted); }
-.nav__links a.active, .nav__links a:hover { color: var(--text); background: rgba(255,255,255,0.06); }
-
-@media (max-width: 720px) {
-  .nav__toggle { display: inline-block; }
-  .nav__links { 
-    position: absolute; right: 1rem; top: 3.6rem; 
-    display: none; flex-direction: column; gap: 0.5rem;
-    background: var(--card); padding: 0.75rem; border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.08);
-  }
-  .nav__links.is-open { display: flex; }
-}
-
- 
 /* Hero */
 .hero {
   display: grid; place-items: center;
@@ -94,7 +63,7 @@ a { color: inherit; text-decoration: none; }
   display: inline-block;
   padding: 0.7rem 1rem;
   background: #41a5f7;
-  color: #0b1020; font-weight: 600; border: 0; border-radius: 12px;
+  color: #ffffff; font-weight: 600; border: 0; border-radius: 12px;
   box-shadow: 0 6px 20px rgba(98,160,255,0.35);
 }
 
@@ -103,8 +72,8 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* Sections */
-.section { max-width: 760px; margin: 0 auto; }
-.section h2 { margin-top: 0; }
+/* .section { max-width: 760px; margin: 0 auto; } */
+.section h2 { margin-top: 0; } 
 .contact {
   display: grid; gap: 0.75rem; max-width: 540px;
 }
@@ -120,3 +89,17 @@ input, textarea {
   border-top: 1px solid rgba(255,255,255,0.06);
   display: sticky; text-align: center; padding: 1.2rem; color: var(--muted);
 }
+
+/* By page*/
+/* About */
+
+/* Contact */
+
+/* Fundraise */
+
+/* Home */
+
+/* Project */
+
+/* Rice */
+

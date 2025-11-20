@@ -41,7 +41,7 @@ export default function Home() {
       {/* Main homepage content */}
         <div className="hero__layout">
           <div className="hero__content">
-              <h1>Lucero</h1>
+              <h1>Rice Synergy</h1>
               <p>
                 A universal solution to healthcare inadequacies in
                 underprivileged communities.
