@@ -1,6 +1,7 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import "../css/Navbar.css";
+import riceigemlogo from "../assets/riceigemlogo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -8,6 +9,9 @@ export default function Navbar() {
 
   return (
     <>
+    <NavLink to="/" className="global-logo-link">
+      <img src={riceigemlogo} alt="Logo" className="global-logo" />
+    </NavLink>
       {/* SMALL FLOATING HAMBURGER */}
         <button
           className="home-hamburger"

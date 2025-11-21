@@ -1,9 +1,14 @@
 export default function Fundraise() {
   return (
+    <main className="container">
+      <p>
+        yes
+      </p>
     <footer className="rice">
       <p>
-        © {new Date().getFullYear()} NextStep. Built with React + Vite.
+        © Synergy of Rice University
       </p>
     </footer>
+    </main>
   );
 }

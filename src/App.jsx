@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="site">
       <Navbar />
-      <main className="container">
+      {/* <main className="container"> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -22,7 +22,7 @@ export default function App() {
           <Route path="/Fundraise" element={<Fundraise />} />
           <Route path="*" element={<h2>404 — Page not found</h2>} />
         </Routes>
-      </main>
+      {/* </main> */} {/* comment container out of site temporarily. Restore this class if website is based on text since text needs to be wrapped in container. Or in each individual page wrap the text section in container class*/}
       <Footer />
     </div>
   );

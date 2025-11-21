@@ -1,5 +1,6 @@
 export default function Contact() {
   return (
+    <main className="container">
     <section className="section">
       <h2>Contact</h2>
       <form className="contact">
@@ -18,5 +19,6 @@ export default function Contact() {
         <button className="btn" type="submit">Send</button>
       </form>
     </section>
+    </main>
   );
 }

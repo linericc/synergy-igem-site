@@ -1,4 +1,19 @@
 /* ---------------------------
+   Logo
+---------------------------- */
+.global-logo-link{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.global-logo{
+  height: 50px;
+  width: auto;
+}
+
+/* ---------------------------
    SMALL HAMBURGER
 ---------------------------- */
 .home-hamburger {

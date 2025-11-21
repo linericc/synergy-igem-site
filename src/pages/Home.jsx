@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 import Timeline from "../components/Timeline.jsx";
-import logo from "../assets/logo.png";
+import lebron from "../assets/lebron.png";
 
 export default function Home() {
   // Scroll-based fade
@@ -20,17 +20,17 @@ export default function Home() {
   return (
     <>
    <section className="hero">
-      {/* Full-screen logo */}
+      {/* Full-screen graphic */}
       <motion.div
         style={{ opacity, scale, y }}
         className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black z-50 transition-opacity duration-700 ${
           hidden ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
-        <p>*insert logo</p>
+        <p>*insert graphic</p>
         <motion.img
-          src={logo}
-          alt="Logo"
+          src={lebron}
+          alt="lebron"
           className="w-64 md:w-96"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
