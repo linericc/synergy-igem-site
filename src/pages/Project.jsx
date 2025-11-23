@@ -1,5 +1,10 @@
+import Ourproject from "../assets/Ourproject.png";
+import "../css/Project.css";
+
 export default function Project() {
   return (
+    <>
+   <img src={Ourproject} className="Ourproject" />
    <main className="container">
       <section classname="hero">
         <section className="project">
@@ -12,5 +17,6 @@ export default function Project() {
         </section>
       </section>
     </main>
+    </>
   );
 }

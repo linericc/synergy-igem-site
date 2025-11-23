@@ -1,7 +1,8 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 import Timeline from "../components/Timeline.jsx";
-import lebron from "../assets/lebron.png";
+import Homepage from "../assets/Homepage.png";
+import "../css/Home.css";
 
 export default function Home() {
   // Scroll-based fade
@@ -19,7 +20,6 @@ export default function Home() {
 
   return (
     <>
-   <section className="hero">
       {/* Full-screen graphic */}
       <motion.div
         style={{ opacity, scale, y }}
@@ -27,17 +27,16 @@ export default function Home() {
           hidden ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       >
-        <p>*insert graphic</p>
         <motion.img
-          src={lebron}
-          alt="lebron"
-          className="w-64 md:w-96"
+          src={Homepage}
+          alt="Home page 1st image"
+          className="Homepage"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         />
       </motion.div>
-
+    <section className="hero">
       {/* Main homepage content */}
         <div className="hero__layout">
           <div className="hero__content">
@@ -47,7 +46,7 @@ export default function Home() {
                 underprivileged communities.
               </p>
               <a className="homebtn" href="/about">
-                Learn more
+                Our project
               </a>
           </div>
         </div>

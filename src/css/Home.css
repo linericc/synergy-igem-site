@@ -1,0 +1,8 @@
+.Homepage{
+  width: 100vw;       /* full viewport width */
+  max-width: 99.5vw;   /* ignore container max-width */
+  margin-left: calc(50% - 50vw); /* BREAK OUT OF CONTAINER */
+  margin-right: calc(50% - 50vw);
+  height: auto;
+  display: block;
+}
