@@ -6,3 +6,53 @@
   height: auto;
   display: block;
 }
+
+.mission-panel {
+  position: relative;
+  width: 100%;
+}
+
+.team-panel {
+  position: relative;
+  width: 100%;
+}
+
+.mission-panel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+}
+
+.team-panel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 30px;
+}
+
+.learn-btn {
+  position: absolute;
+  bottom: 90px;        
+  left: 30%;
+  transform: translateX(-50%);
+  padding: 12px 26px;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  color: #a4e1ff;
+}
+
+.learn-btn-2 {
+  position: absolute;
+  bottom: 90px;        
+  left: 73%;
+  transform: translateX(-50%);
+  padding: 12px 26px;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  color: #baffe8;
+}

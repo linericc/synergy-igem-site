@@ -57,7 +57,7 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
 }
 .hero h1 { font-size: clamp(2rem, 3.5vw + 1rem, 3rem); margin: 0 0 0.75rem; }
-.hero p { color: var(--muted); margin: 0 0 1.5rem; }
+.hero p { color: #080707; margin: 0 0 1.5rem; font-size: 1.2rem;}
 
 .homebtn {
   display: inline-block;

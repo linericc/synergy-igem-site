@@ -2,13 +2,16 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 import Timeline from "../components/Timeline.jsx";
 import Homepage from "../assets/Homepage.png";
+import Homepage2 from "../assets/Homepage2.png";
+import Homepage3 from "../assets/Homepage3.png";
+import Homepage4 from "../assets/Homepage4.png";
 import "../css/Home.css";
 
 export default function Home() {
   // Scroll-based fade
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 200], [1, 0]);
-  const scale = useTransform(scrollY, [0, 200], [1, 0.8]);
+  // const scale = useTransform(scrollY, [0, 200], [1, 0.8]);
   const y = useTransform(scrollY, [0, 300], [0, -100]);
 
   const [hidden, setHidden] = useState(false);
@@ -22,7 +25,7 @@ export default function Home() {
     <>
       {/* Full-screen graphic */}
       <motion.div
-        style={{ opacity, scale, y }}
+        style={{ opacity, y }}
         className={`fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-black z-50 transition-opacity duration-700 ${
           hidden ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
@@ -42,19 +45,25 @@ export default function Home() {
           <div className="hero__content">
               <h1>Rice Synergy</h1>
               <p>
-                A universal solution to healthcare inadequacies in
-                underprivileged communities.
+                Undergraduate research club at Rice University promoting research opportunities, ideas, resources, and teams.
               </p>
-              <a className="homebtn" href="/about">
+              {/* <a className="homebtn" href="/about">
                 Our project
-              </a>
+              </a>*/}
           </div>
         </div>
     </section>
-    <section className="how-we-work">
-      <h2>How we work</h2>
-      <Timeline />
-    </section>
+       <img src={Homepage2} className="Ourproject"/>
+       <div className="mission-panel">
+        <img src={Homepage3} className="Ourproject"/>
+        <a className="learn-btn" href="/UnderConstruction">Learn More</a>
+       </div>
+       <div className="team-panel">
+        <img src={Homepage4} className="Ourproject"/>
+        <a className="learn-btn-2" href="/Rice">Learn More</a>
+       </div>
+      {/*<h2>How we work</h2>
+      <Timeline />*/}
     </>
   );
 }

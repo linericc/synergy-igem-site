@@ -7,6 +7,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
+  const isHome = location.pathname === "/";
+
+
   return (
     <>
     <NavLink to="/" className="global-logo-link">
@@ -14,7 +17,7 @@ export default function Navbar() {
     </NavLink>
       {/* SMALL FLOATING HAMBURGER */}
         <button
-          className="home-hamburger"
+        className={`home-hamburger ${isHome ? "hamburger-white" : ""}`}
           onClick={() => setOpen(!open)}
         >
           {open ? "✕" : "☰"}
@@ -23,11 +26,11 @@ export default function Navbar() {
       {/* SMALL RIGHT-SIDE MENU */}
         <div className={`side-menu ${open ? "show" : ""}`}>
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
-         <NavLink to="/project" onClick={() => setOpen(false)}>Our Project</NavLink>
-          <NavLink to="/about" onClick={() => setOpen(false)}>About iGEM</NavLink>
-          <NavLink to="/rice" onClick={() => setOpen(false)}>About Rice Synergy & Rice iGEM</NavLink>
-          <NavLink to="/contact" onClick={() => setOpen(false)}>About Rice Synthetic Biology</NavLink>
-          <NavLink to="/fundraise" onClick={() => setOpen(false)}>How to Support</NavLink>
+          {/* <NavLink to="/project" onClick={() => setOpen(false)}>Our Project</NavLink> */}
+          <NavLink to="/iGEM" onClick={() => setOpen(false)}>About iGEM</NavLink>
+          <NavLink to="/rice" onClick={() => setOpen(false)}>Our Team</NavLink>
+          {/* <NavLink to="/contact" onClick={() => setOpen(false)}>About Rice Synthetic Biology</NavLink> */}
+          <NavLink to="/fundraise" onClick={() => setOpen(false)}>Support Us!</NavLink>
         </div>
     </>
   );
