@@ -43,9 +43,9 @@ export default function Home() {
       {/* Main homepage content */}
         <div className="hero__layout">
           <div className="hero__content">
-              <h1>Rice Synergy</h1>
+              <h1>Rice Synergy iGEM</h1>
               <p>
-                Undergraduate research club at Rice University promoting research opportunities, ideas, resources, and teams.
+                The official Rice Synergy team for the International Genetically Engineered Machine (iGEM) competition.
               </p>
               {/* <a className="homebtn" href="/about">
                 Our project
