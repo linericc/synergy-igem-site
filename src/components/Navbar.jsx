@@ -28,6 +28,7 @@ export default function Navbar() {
           <NavLink to="/" onClick={() => setOpen(false)}>Home</NavLink>
           {/* <NavLink to="/project" onClick={() => setOpen(false)}>Our Project</NavLink> */}
           <NavLink to="/iGEM" onClick={() => setOpen(false)}>About iGEM</NavLink>
+          <NavLink to="/Synergy" onClick={() => setOpen(false)}>About Synergy</NavLink>
           <NavLink to="/rice" onClick={() => setOpen(false)}>Our Team</NavLink>
           {/* <NavLink to="/contact" onClick={() => setOpen(false)}>About Rice Synthetic Biology</NavLink> */}
           <NavLink to="/fundraise" onClick={() => setOpen(false)}>Support Us!</NavLink>

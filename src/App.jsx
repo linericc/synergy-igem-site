@@ -7,6 +7,7 @@ import Contact from "./pages/Contact.jsx";
 import Project from "./pages/Project.jsx";
 import Fundraise from "./pages/Fundraise.jsx";
 import Rice from "./pages/Rice.jsx";
+import Synergy from "./pages/Synergy.jsx"
 import UnderConstruction from "./pages/UnderConstruction.jsx";
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/Project" element={<Project />} />
           <Route path="/Rice" element={<Rice />} />
+          <Route path="/Synergy" element={<Synergy />} />
           <Route path="/Fundraise" element={<Fundraise />} />
           <Route path="/UnderConstruction" element={<UnderConstruction />} />
         </Routes>
