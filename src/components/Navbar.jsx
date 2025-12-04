@@ -1,13 +1,13 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
-import "../css/Navbar.css";
 import riceigemlogo from "../assets/riceigemlogo.png";
+import "../css/Navbar.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
-  const isHome = location.pathname === "/";
+  const isiGEM = location.pathname === "/iGEM";
 
 
   return (
@@ -17,7 +17,7 @@ export default function Navbar() {
     </NavLink>
       {/* SMALL FLOATING HAMBURGER */}
         <button
-        className={`home-hamburger ${isHome ? "hamburger-white" : ""}`}
+        className={`home-hamburger ${isiGEM ? "hamburger-blue" : ""}`}
           onClick={() => setOpen(!open)}
         >
           {open ? "✕" : "☰"}

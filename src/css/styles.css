@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
-  background: rgba(255, 255, 255, 0.8);
+  background: #080707;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -56,8 +56,8 @@ a { color: inherit; text-decoration: none; }
   padding: 2rem;
   text-align: center;
 }
-.hero h1 { font-size: clamp(2rem, 3.5vw + 1rem, 3rem); margin: 0 0 0.75rem; }
-.hero p { color: #080707; margin: 0 0 1.5rem; font-size: 1.2rem;}
+.hero h1 { font-size: clamp(2rem, 3.5vw + 1rem, 3rem); margin: 0 0 0.75rem; color: #ffffff; }
+.hero p { color: #ffffff; margin: 0 0 1.5rem; font-size: 1.2rem;}
 
 .homebtn {
   display: inline-block;
@@ -86,8 +86,9 @@ input, textarea {
 
 /* Footer */
 .footer {
-  border-top: 1px solid rgba(255,255,255,0.06);
-  display: sticky; text-align: center; padding: 1.2rem; color: var(--muted);
+  border-top: 1px solid 080707;
+  background-color: #080707;
+  display: sticky; text-align: center; padding: 1.2rem; color: #ffffff;
 }
 
 /* By page*/

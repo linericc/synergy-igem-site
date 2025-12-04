@@ -9,8 +9,6 @@ export default function Fundraise() {
       <img src={Supportus1} className="Ourproject" />
       <img src={Supportus2} className="Ourproject" />
       <img src={Supportus3} className="Ourproject" />
-    <main className="container">
-    </main>
     </>
   );
 }

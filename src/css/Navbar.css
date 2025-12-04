@@ -22,14 +22,14 @@
   right: 25px;
   font-size: 30px;
   background: none;
-  color: #1454c9;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   z-index: 50;
 }
 
-.hamburger-white {
-  color: white;
+.hamburger-blue {
+  color: #1454c9;
 }
 
 
