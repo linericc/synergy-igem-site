@@ -1,5 +1,16 @@
 # Rice Syngergy igem refresh
 
+push all new changes to gh-pages subbranch (the branch that is being published as the website right now. the main and master branches are not deployed or published.)
+
+# for now, push using sequence:
+
+npm run build
+git add -f dist
+git commit -m "fix GitHub Pages refresh routing"
+git subtree split --prefix dist -b gh-pages-temp
+git push origin gh-pages-temp:gh-pages --force
+git branch -D gh-pages-temp
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
