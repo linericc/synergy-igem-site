@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
 import Timeline from "../components/Timeline.jsx";
@@ -56,11 +57,11 @@ export default function Home() {
        <img src={Homepage2} className="Ourproject"/>
        <div className="mission-panel">
         <img src={Homepage3} className="Ourproject"/>
-        <a className="learn-btn" href="/UnderConstruction">Learn More</a>
+        <Link className = "learn-btn" to="/UnderConstruction">Learn More</Link>
        </div>
        <div className="team-panel">
         <img src={Homepage4} className="Ourproject"/>
-        <a className="learn-btn-2" href="/Rice">Learn More</a>
+        <Link className = "learn-btn-2" to="/Rice">Learn More</Link>
        </div>
       {/*<h2>How we work</h2>
       <Timeline />*/}
