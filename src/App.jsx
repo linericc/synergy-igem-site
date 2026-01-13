@@ -9,6 +9,7 @@ import Fundraise from "./pages/Fundraise.jsx";
 import Rice from "./pages/Rice.jsx";
 import Synergy from "./pages/Synergy.jsx"
 import UnderConstruction from "./pages/UnderConstruction.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/Synergy" element={<Synergy />} />
           <Route path="/Fundraise" element={<Fundraise />} />
           <Route path="/UnderConstruction" element={<UnderConstruction />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       {/* </main> */} {/* comment container out of site temporarily. Restore this class if website is based on text since text needs to be wrapped in container. Or in each individual page wrap the text section in container class*/}
       <Footer />
