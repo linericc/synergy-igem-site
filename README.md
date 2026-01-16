@@ -1,11 +1,11 @@
 # Rice Syngergy igem refresh
 
-push all new changes to gh-pages subbranch (the branch that is being published as the website right now. the main and master branches are not deployed or published.) jb
+push all new changes to master branch, which is the branch that is currently being deployed
 
 # for now, push using sequence:
 
 npm run build
-git add -f dist
+git add .
 git commit -m "fix GitHub Pages refresh routing"
 git push (master branch)
 
