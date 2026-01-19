@@ -11,7 +11,7 @@ import "../css/Home.css";
 export default function Home() {
   // Scroll-based fade
   const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [0, 200], [1, 0]);
+  const opacity = useTransform(scrollY, [0, 500], [1, 0]);
   // const scale = useTransform(scrollY, [0, 200], [1, 0.8]);
   const y = useTransform(scrollY, [0, 300], [0, -100]);
 
@@ -63,8 +63,7 @@ export default function Home() {
         <img src={Homepage4} className="Ourproject"/>
         <Link className = "learn-btn-2" to="/Rice">Learn More</Link>
        </div>
-      {/*<h2>How we work</h2>
-      <Timeline />*/}
+      {/*<Timeline />*/}
     </>
   );
 }

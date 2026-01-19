@@ -5,9 +5,13 @@ push all new changes to master branch, which is the branch that is currently bei
 # for now, push using sequence:
 
 npm run build
-git add .
-git commit -m "fix GitHub Pages refresh routing"
+rm -rf docs/*
+cp -r dist/* docs/
+git add docs 
+git commit -m ""
 git push (master branch)
+
+then make sure that in the Github repository, the custom domain is filled as "www.riceigem.com" under the pages tab of settings
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

@@ -6,3 +6,10 @@
   height: auto;
   display: block;
 }
+
+.FundraiseText{
+  padding: '3rem',;
+  max-Width: '800px'; 
+  margin: '0 auto' ;
+  font-family: 'Courier New', serif;
+}
